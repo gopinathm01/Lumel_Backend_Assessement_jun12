@@ -1,26 +1,3 @@
-Project Structure  
-
-sales-insights-api/
-├── config/
-│   └── db.config.js             # Database configuration
-├── controllers/
-│   ├── refresh.controller.js   # Refresh data API logic
-│   └── topProducts.controller.js # Top products API logic
-├── models/                     # Sequelize models (Customer, Product, Order, etc.)
-├── routes/
-│   ├── refresh.routes.js       # Refresh API routes
-│   └── topProducts.routes.js   # Top products API routes
-├── utils/
-│   └── csvLoader.js            # CSV data loader script
-├── data/
-│   └── sample.csv              # Sample CSV data file
-├── jobs/
-│   └── dataRefresh.js          # Background job for daily refresh (optional)
-├── logs/                       # Logs folder (make sure this exists)
-├── server.js                   # Main server entry point
-├── .env                       # Environment variables
-└── README.md                   # Project documentation
- 
 
 1)  Installed Dependencies
 
@@ -55,11 +32,39 @@ sales-insights-api/
 
 3) API Endpoints
 
-    POST /api/refresh — Trigger manual data refresh from CSV
+    POST /api/refresh
 
-    GET /api/top-products — Get top N products by quantity sold in a date range 
+        Trigger manual data refresh from CSV file
 
-4) Testing with Postman
+    GET /api/top-products
+
+        Retrieve top N products by quantity sold within a date range
+
+        Supports filters:
+
+            limit (number of top products, default 5)
+
+            category (filter by product category)
+
+            region (filter by sales region)
+
+        Query parameters:
+
+            startDate (required)
+
+            endDate (required)
+
+4) Core Analysis Implemented
+
+    Top N Products:
+
+        Overall: Based on quantity sold within a date range
+
+        By Category: Based on quantity sold filtered by category within a date range
+
+        By Region: Based on quantity sold filtered by region within a date range
+
+5) Testing with Postman
 
     Import the included Postman collection from /postman/lumel_backend_assessement.postman_collection.json
 
