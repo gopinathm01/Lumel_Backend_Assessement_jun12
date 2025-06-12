@@ -35,7 +35,9 @@ ERP DIAGRAM FOR DATABASE - https://dbdocs.io/mgopinath413/Backend_Assement_DB_ER
 
     POST /api/refresh
 
-        Trigger manual data refresh from CSV file
+        Trigger manual data refresh from CSV file 
+
+       -  CronJob run for this Every 5 minutes Once
 
     GET /api/top-products
 
