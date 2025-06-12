@@ -28,6 +28,6 @@ module.exports = (sequelize, DataTypes) => {
     tableName: 'orders',
     timestamps: false,
   });
-
+ 
   return Order;
 };

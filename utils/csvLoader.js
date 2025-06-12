@@ -90,11 +90,11 @@ async function loadCSV(filePath) {
           }, { transaction });
 
           await transaction.commit();
-          logger.info(`✅ Loaded ${rows.length} rows successfully`);
-          resolve(`✅ Loaded ${rows.length} rows successfully`);
+          logger.info(`Loaded ${rows.length} rows successfully`);
+          resolve(`Loaded ${rows.length} rows successfully`);
         } catch (error) {
           await transaction.rollback();
-          logger.error(`❌ Transaction failed: ${error.message}`);
+          logger.error(`Transaction failed: ${error.message}`);
 
           try {
             await RefreshLog.create({
@@ -103,15 +103,15 @@ async function loadCSV(filePath) {
               message: error.message
             });
           } catch (logErr) {
-            logger.error(`⚠️ Failed to log refresh error: ${logErr.message}`);
+            logger.error(`Failed to log refresh error: ${logErr.message}`);
           }
 
-          reject(`❌ CSV Load failed: ${error.message}`);
+          reject(`CSV Load failed: ${error.message}`);
         }
       })
       .on('error', (err) => {
-        logger.error(`❌ Error reading CSV: ${err.message}`);
-        reject(`❌ Error reading CSV: ${err.message}`);
+        logger.error(`Error reading CSV: ${err.message}`);
+        reject(`Error reading CSV: ${err.message}`);
       });
   });
 }

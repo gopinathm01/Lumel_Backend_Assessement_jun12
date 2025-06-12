@@ -46,5 +46,5 @@ db.OrderItem.belongsTo(db.Product, { foreignKey: { name: 'ProductId', allowNull:
 // Order - OrderItem (One-to-Many)
 db.Order.hasMany(db.OrderItem, { foreignKey: { name: 'OrderId', allowNull: false } });
 db.OrderItem.belongsTo(db.Order, { foreignKey: { name: 'OrderId', allowNull: false } });
-
+ 
 module.exports = db;

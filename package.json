@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "load-csv": "node utils/csvLoader.js"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +22,5 @@
     "node-cron": "^4.1.0",
     "sequelize": "^6.37.7",
     "winston": "^3.17.0"
-  }
+  } 
 }

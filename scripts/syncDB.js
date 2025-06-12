@@ -10,3 +10,4 @@ db.sequelize.sync({ alter: true })
     console.error("Failed to sync models:", err);
     process.exit(1);
   });
+ 

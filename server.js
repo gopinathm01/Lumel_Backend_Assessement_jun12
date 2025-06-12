@@ -11,7 +11,7 @@ app.use(express.json());
 
 const refreshRoutes = require('./routes/refresh.routes');
 app.use('/api', refreshRoutes);  
-;
+
 
 const topProductsRoutes = require('./routes/topProducts.routes');
 app.use('/api', topProductsRoutes);
@@ -30,8 +30,8 @@ db.sequelize.sync({ alter: true })
 
 
 
-// Schedule job to run every 5 minutes
-cron.schedule('*/5 * * * *', async () => {
+// Schedule job to run every 24 hours once
+cron.schedule('0 0 * *', async () => {
   console.log('Daily refresh job started...');
   await refreshData();
 });

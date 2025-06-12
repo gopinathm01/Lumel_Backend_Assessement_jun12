@@ -1,0 +1,22 @@
+Project Structure  
+ 
+sales-insights-api/
+
+config/db.config.js                                        # Database configuration
+controllers/
+           /refresh.controller.js                          # Refresh data API logic
+           /topProducts.controller.js                      # Top products API logic
+models/                                                    # Sequelize models (Customer, Product, Order, etc.)
+routes/
+      /refresh.routes.js                                   # Refresh API routes
+      /topProducts.routes.js                               # Top products API routes
+utils/
+     /csvLoader.js                                         # CSV data loader script
+data/
+    /sample.csv                                            # Sample CSV data file
+jobs/
+    /dataRefresh.js                                        # Background job for daily refresh (optional)
+logs/                                                      # Logs folder (make sure this exists)
+server.js                                                  # Main server entry point
+.env                                                       # Environment variables
+README.md                                                  # Project documentation

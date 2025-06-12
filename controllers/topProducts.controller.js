@@ -11,7 +11,7 @@ const getTopProducts = async (req, res) => {
       logger.warn('startDate or endDate missing in query');
       return res.status(400).json({ success: false, message: 'startDate and endDate are required' });
     }
-
+ 
     const replacements = {
       startDate,
       endDate,

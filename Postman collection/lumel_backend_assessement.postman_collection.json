@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "01404d9b-92eb-4e92-b1d0-7c50814f6f41",
+		"name": "lumel_backend_assessement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31453488"
+	},
+	"item": [
+		{
+			"name": "refresh",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/top-products?startDate=2023-12-15&endDate=2024-05-18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"top-products"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2023-12-15"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-05-18"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/top-products?startDate=2023-12-15&endDate=2024-05-18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"top-products"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2023-12-15"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-05-18"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
