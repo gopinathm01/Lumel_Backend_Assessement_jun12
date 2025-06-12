@@ -1,0 +1,19 @@
+2025-06-12 21:56:10 [INFO]: 📂 Reading CSV file...
+2025-06-12 21:56:10 [INFO]: 📦 CSV file processed. Total rows: 6
+2025-06-12 21:56:10 [INFO]: ✅ Loaded 6 rows successfully
+2025-06-12 21:56:15 [INFO]: ✅ Top products retrieved from 2023-12-15 to 2024-05-18
+2025-06-12 22:07:06 [INFO]: Manual refresh started
+2025-06-12 22:07:06 [INFO]: 📂 Reading CSV file...
+2025-06-12 22:07:06 [INFO]: 📦 CSV file processed. Total rows: 6
+2025-06-12 22:07:06 [INFO]: ✅ Loaded 6 rows successfully
+2025-06-12 22:07:06 [INFO]: Manual refresh successful: ✅ Loaded 6 rows successfully
+2025-06-12 22:07:13 [INFO]: ✅ Top products retrieved from 2023-12-15 to 2024-05-18
+2025-06-12 22:10:39 [INFO]: 🔁 Manual refresh initiated...
+2025-06-12 22:10:39 [INFO]: 📅 Running data refresh job...
+2025-06-12 22:10:39 [INFO]: 📂 Reading CSV file...
+2025-06-12 22:27:17 [INFO]: ✅ Top products retrieved from 2023-12-15 to 2024-05-18
+2025-06-12 22:27:23 [INFO]: Manual refresh started
+2025-06-12 22:27:23 [INFO]: 📂 Reading CSV file...
+2025-06-12 22:27:23 [INFO]: 📦 CSV file processed. Total rows: 6
+2025-06-12 22:27:23 [INFO]: ✅ Loaded 6 rows successfully
+2025-06-12 22:27:23 [INFO]: Manual refresh successful: ✅ Loaded 6 rows successfully
