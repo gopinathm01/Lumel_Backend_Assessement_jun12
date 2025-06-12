@@ -1,3 +1,4 @@
+ERP DIAGRAM FOR DATABASE - https://dbdocs.io/mgopinath413/Backend_Assement_DB_ERP_Diagram?view=relationships
 
 1)  Installed Dependencies
 
@@ -22,7 +23,7 @@
 
     Clone the repo
 
-    Run npm install to install dependencies
+    Run npm install - install dependencies
 
     Setup your .env file (DB credentials, PORT, etc.)
 
@@ -72,4 +73,6 @@
 
     Validate error responses by calling endpoints with missing or invalid parameters
 
-    Confirm logs generated in /logs folder after refresh calls
+    Confirm logs generated in /logs folder after refresh calls 
+
+project structure -- > refer projectStructure.txt  
